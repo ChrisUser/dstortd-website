@@ -1,0 +1,45 @@
+$main-background-color: #000000
+$main-text-color: #F7F7F7
+$accent-blue: #00dbde
+$accent-pink: #fc00ff
+
+$main-border-radius: 4pt
+
+$phone-size: 600px
+$tablet-size: 992px
+$desktop-size: 1200px
+
+=square($size)
+  height: $size
+  width: $size
+
+=flexbox($justify, $align, $direction, $wrap)
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $direction
+  flex-wrap: $wrap
+
+=position($position, $top: null, $right: null, $bottom: null, $left: null)
+  position: $position
+  top: $top
+  bottom: $bottom
+  left: $left
+  right: $right
+
+@mixin breakpoint($class)
+  @if $class == '<phone-landscape'
+    @media (max-width: $tablet-size) and (orientation: landscape)
+      @content
+
+  @if $class == '<phone'
+    @media (max-width: $phone-size)
+      @content
+      
+  @if $class == '<tablet'
+    @media (max-width: $tablet-size)
+      @content
+
+  @if $class == '<desktop'
+    @media (max-width: $desktop-size)
+      @content
