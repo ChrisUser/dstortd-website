@@ -164,11 +164,11 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           <h1 className="contacts-hidden-text">Parlaci del tuo progetto</h1>
           <p className="contacts-hidden-text subtitle">SCRIVI A QUESTA MAIL</p>
           <div id="mailAddressContainer" className="address-line">
-            <a
-              className="gradient-text anchor-link"
-              href="mailto:dstortdstudio@gmail.com"
-            >
-              <span>dstortdstudio@gmail.com</span>
+            <a className="anchor-link" href="mailto:dstortdstudio@gmail.com">
+              <span
+                data-content="dstortdstudio@gmail.com"
+                className="gradient-text"
+              ></span>
             </a>
           </div>
         </div>

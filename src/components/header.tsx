@@ -5,7 +5,10 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 const Header: React.FC = () => {
   return (
     <header>
-      <div className="text-logo-container">
+      <div
+        className="text-logo-container"
+        onClick={() => scrollTo("#introContainer")}
+      >
         <CustomImage fileName={"title.png"} />
       </div>
       <button

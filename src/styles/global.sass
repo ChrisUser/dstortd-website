@@ -144,6 +144,7 @@ header
         padding: 16pt 32pt
 
     .text-logo-container
+        cursor: pointer
         height: 18pt
         width: 70pt
 
@@ -390,9 +391,12 @@ header
         a
             font-size: 1.5rem
 
-.gradient-text
-    background: linear-gradient(to right top, $accent-pink 0%, $accent-blue 100%)
+.gradient-text::after
+    content: attr(data-content)
+    background-image: linear-gradient(to right top, $accent-pink 0%, $accent-blue 100%)
     background-clip: text
+    -webkit-background-clip: text
+    text-fill-color: transparent
     -webkit-text-fill-color: transparent
 
 /** ---- 404 ---- */

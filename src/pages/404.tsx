@@ -10,7 +10,7 @@ const NotFoundPage: React.FC = () => (
     <div className="not-found-container">
       <div className="error-container">
         <div className="top-left-corner" />
-        <h1 className="error-title gradient-text">404</h1>
+        <h1 className="error-title gradient-text" data-content="404" />
         <div className="bottom-right-corner" />
       </div>
       <p>Oops, qui non c'è ciò che cerchi.</p>
