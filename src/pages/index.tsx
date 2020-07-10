@@ -111,8 +111,10 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             <p>
               Comunicare qualcosa è l'obiettivo di tutte le aziende che vogliono
               interfacciarsi con un pubblico più ampio per raggiungere nuovi
-              clienti o utenti. Il messaggio è la parte principale di ogni
-              progetto, noi lo sappiamo bene. Selezioniamo le parole con la
+              clienti o utenti. Per questo sfruttiamo il copywriting : la scelta
+              delle parole giuste è fondamentale per attrarre il maggior pubblico
+              possibile, aumentare la client conversion e apparire più in alto
+              nei motori di ricerca. Selezioniamo le parole con la
               massima cura e le disponiamo all'interno dei paragrafi come
               tessere di un puzzle.
             </p>
@@ -128,11 +130,12 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
           <div className="service-lower-section">
             <p>
-              I contenuti grafici sono anch'essi degli ottimi strumenti per
-              trasmettere un concetto o un'emozione. Un'immagine vale più di
-              mille parole. Studiamo una grafica su misura e la realizziamo
-              tenendo conto di ottimizzazione e perfezionamento anche in corso
-              d'opera. Che siano composizioni vettoriali, mockup oppure
+              I contenuti grafici sono degli ottimi strumenti per
+              trasmettere un concetto o un'emozione, sono il punto di partenza
+              per dare una buona impressione di sè o della propria azienda.
+              Un'immagine vale più di mille parole. Studiamo una grafica su misura e 
+              la realizziamo tenendo conto di ottimizzazione e perfezionamento anche in 
+              corso d'opera. Che siano composizioni vettoriali, mockup oppure
               manipolazioni digitali vi potrete affidare alla nostra esperienza.
             </p>
           </div>
@@ -148,12 +151,12 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           <div className="service-lower-section">
             <p>
               Mantenere un buon profilo sui social è complesso e comporta
-              un'enorme spesa di tempo. Se vuoi alleggerirti questo peso
-              possiamo pensarci noi. Gestiamo i tuoi profili social e la tua
+              un'enorme spesa di tempo. Il social media management non è mai
+              stato importante come oggi. Gestiamo i tuoi profili social e la tua
               immagine digitale. Ci occupiamo dell'acquisizione di nuovi
               followers, della pianificazione dei post e delle possibili
               collaborazioni all'interno delle varie piattaforme. Con noi sei
-              coperto da ogni punto di vista.
+              coperto sotto ogni punto di vista.
             </p>
           </div>
         </div>
