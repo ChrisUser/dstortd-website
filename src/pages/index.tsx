@@ -1,6 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import React, { useEffect, useState } from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { PageProps, graphql } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Loader from "../components/loader"

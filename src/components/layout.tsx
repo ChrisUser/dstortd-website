@@ -2,7 +2,11 @@ import React from "react"
 import Header from "./header"
 import ".././styles/global.sass"
 
-const Layout: React.FC = ({ children }) => {
+interface Props {
+  children?: any
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Header />
@@ -12,7 +16,7 @@ const Layout: React.FC = ({ children }) => {
         <a
           className="anchor-link"
           target="_blank"
-          href="https://www.instagram.com/dstortd.studio/"
+          href=""
         >
           INSTAGRAM
         </a>

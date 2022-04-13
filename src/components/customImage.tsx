@@ -1,5 +1,5 @@
-import Img from "gatsby-image"
 import React from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
@@ -14,9 +14,7 @@ const CustomImage: React.FC<Props> = props => {
           node {
             base
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: FIXED)
             }
           }
         }
@@ -26,12 +24,13 @@ const CustomImage: React.FC<Props> = props => {
 
   return (
     <>
-      {data.allFile.edges.map((image, index) => {
+      {data.allFile.edges.map((image: any, index: number) => {
         return image.node.base === props.fileName ? (
-          <Img
-            fluid={image.node.childImageSharp.fluid}
+          <GatsbyImage
+            image={image.node.childImageSharp.gatsbyImageData}
             alt={image.node.base.split(".")[0]}
             key={index}
+            style={{height: '100%', width: '100%'}}
           />
         ) : (
           ""
