@@ -2,7 +2,7 @@
   "name": "dstortd-website",
   "private": true,
   "description": "",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "",
   "dependencies": {
     "gatsby": "^4.12.1",
@@ -24,6 +24,10 @@
   },
   "devDependencies": {
     "prettier": "2.6.2"
+  },
+  "resolutions": {
+    "immer": "9.0.6",
+    "ws": "7.4.6"
   },
   "keywords": [
     "gatsby"
