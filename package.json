@@ -2,7 +2,7 @@
   "name": "dstortd-website",
   "private": true,
   "description": "",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "",
   "dependencies": {
     "gatsby": "^4.12.1",
