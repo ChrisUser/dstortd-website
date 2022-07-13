@@ -5,35 +5,25 @@
   "version": "1.1.4",
   "author": "",
   "dependencies": {
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-image": "^2.12.1",
-    "gatsby-plugin-manifest": "^4.12.1",
-    "gatsby-plugin-offline": "^5.12.1",
-    "gatsby-plugin-react-helmet": "^5.12.1",
-    "gatsby-plugin-sass": "^5.12.1",
-    "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby": "^4.18.1",
+    "gatsby-plugin-image": "^2.18.1",
+    "gatsby-plugin-manifest": "^4.18.1",
+    "gatsby-plugin-offline": "^5.18.1",
+    "gatsby-plugin-react-helmet": "^5.18.0",
+    "gatsby-plugin-sass": "^5.18.1",
+    "gatsby-plugin-sharp": "^4.18.1",
     "gatsby-plugin-smoothscroll": "^1.1.0",
-    "gatsby-source-filesystem": "^4.12.1",
-    "gatsby-transformer-sharp": "^4.12.1",
+    "gatsby-source-filesystem": "^4.18.1",
+    "gatsby-transformer-sharp": "^4.18.1",
     "prop-types": "^15.7.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.0.0",
-    "sass": "^1.49.9",
-    "sass-loader": "^12.3.0"
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   },
   "devDependencies": {
-    "prettier": "2.6.2"
-  },
-  "resolutions": {
-    "async": "2.6.4",
-    "cross-fetch": "3.1.5",
-    "devcert": "1.2.1",
-    "immer": "9.0.6",
-    "sharp": "0.30.5",
-    "ws": "7.4.6",
-    "got": "11.8.5",
-    "shell-quote": "1.7.3"
+    "prettier": "2.7.1"
   },
   "keywords": [
     "gatsby"
