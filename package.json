@@ -27,10 +27,12 @@
   },
   "resolutions": {
     "cross-fetch": "3.1.5",
+    "fyle-type": "16.5.4",
     "got": "11.8.5",
     "jpeg-js": "0.4.4",
     "node-fetch": "2.6.7",
     "parse-path": "5.0.0",
+    "terser": "5.14.2",
     "ws": "7.4.6"
   },
   "keywords": [
