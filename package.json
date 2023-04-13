@@ -44,7 +44,8 @@
     "terser": "5.14.2",
     "ua-parser-js": "0.7.33",
     "webpack": "5.76.0",
-    "ws": "7.4.6"
+    "ws": "7.4.6",
+    "xml2js": "0.5.0"
   },
   "keywords": [
     "gatsby"
