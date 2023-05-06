@@ -30,7 +30,7 @@
     "cacheable-request": "10.2.7",
     "cross-fetch": "3.1.5",
     "decode-uri-component": "0.2.1",
-    "engine.io": "6.2.1",
+    "engine.io": "6.4.2",
     "file-type": "16.5.4",
     "gatsby-plugin-sharp": "4.25.1",
     "got": "11.8.5",
