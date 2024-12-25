@@ -22,7 +22,7 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     setTimeout(() => {
       document
         .getElementById("blackCurtain")
-        .classList.add("unroll-black-curtain")
+        ?.classList.add("unroll-black-curtain")
       setTimeout(() => makeTextVisible(), 2000)
     }, 3000)
     window.addEventListener("scroll", handlePageScroll)
@@ -37,19 +37,19 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   const hideLateralText = () => {
     const introContainer = document.getElementById("introContainer")
     const lateralText = document.getElementById("lateralText")
-    if (introContainer.getBoundingClientRect().top <= -400) {
-      lateralText.classList.add("hide-on-left")
-    } else lateralText.classList.remove("hide-on-left")
+    if (introContainer && introContainer.getBoundingClientRect().top <= -400) {
+      lateralText?.classList.add("hide-on-left")
+    } else lateralText?.classList.remove("hide-on-left")
   }
 
   const contactsAnimations = () => {
     const contacts = document.getElementById("contactsContainer")
     const mailLine = document.getElementById("mailAddressContainer")
     const contactsElements = document.getElementsByClassName(
-      "contacts-hidden-text"
+      "contacts-hidden-text",
     )
-    if (contacts.getBoundingClientRect().top <= 200) {
-      mailLine.classList.add("unroll-grey-paper")
+    if (contacts && contacts.getBoundingClientRect().top <= 200) {
+      mailLine?.classList.add("unroll-grey-paper")
       Array.from(contactsElements).forEach((element, index) => {
         setTimeout(() => element.classList.add("visible-text"), index * 300)
       })
@@ -112,9 +112,9 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
               Comunicare qualcosa è l'obiettivo di tutte le aziende che vogliono
               interfacciarsi con un pubblico più ampio per raggiungere nuovi
               clienti o utenti. Per questo sfruttiamo il copywriting : la scelta
-              delle parole giuste è fondamentale per attrarre il maggior pubblico
-              possibile, aumentare la client conversion e apparire più in alto
-              nei motori di ricerca. Selezioniamo le parole con la
+              delle parole giuste è fondamentale per attrarre il maggior
+              pubblico possibile, aumentare la client conversion e apparire più
+              in alto nei motori di ricerca. Selezioniamo le parole con la
               massima cura e le disponiamo all'interno dei paragrafi come
               tessere di un puzzle.
             </p>
@@ -130,13 +130,14 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
           <div className="service-lower-section">
             <p>
-              I contenuti grafici sono degli ottimi strumenti per
-              trasmettere un concetto o un'emozione, sono il punto di partenza
-              per dare una buona impressione di sè o della propria azienda.
-              Un'immagine vale più di mille parole. Studiamo una grafica su misura e 
-              la realizziamo tenendo conto di ottimizzazione e perfezionamento anche in 
-              corso d'opera. Che siano composizioni vettoriali, mockup oppure
-              manipolazioni digitali vi potrete affidare alla nostra esperienza.
+              I contenuti grafici sono degli ottimi strumenti per trasmettere un
+              concetto o un'emozione, sono il punto di partenza per dare una
+              buona impressione di sè o della propria azienda. Un'immagine vale
+              più di mille parole. Studiamo una grafica su misura e la
+              realizziamo tenendo conto di ottimizzazione e perfezionamento
+              anche in corso d'opera. Che siano composizioni vettoriali, mockup
+              oppure manipolazioni digitali vi potrete affidare alla nostra
+              esperienza.
             </p>
           </div>
         </div>
@@ -152,8 +153,8 @@ const HomePage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             <p>
               Mantenere un buon profilo sui social è complesso e comporta
               un'enorme spesa di tempo. Il social media management non è mai
-              stato importante come oggi. Gestiamo i tuoi profili social e la tua
-              immagine digitale. Ci occupiamo dell'acquisizione di nuovi
+              stato importante come oggi. Gestiamo i tuoi profili social e la
+              tua immagine digitale. Ci occupiamo dell'acquisizione di nuovi
               followers, della pianificazione dei post e delle possibili
               collaborazioni all'interno delle varie piattaforme. Con noi sei
               coperto sotto ogni punto di vista.

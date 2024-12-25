@@ -4,9 +4,9 @@ import "../styles/global.sass"
 const Loader: React.FC = () => {
   useEffect(() => {
     const loaderImage = document.getElementById("loaderImage")
-    loaderImage.classList.add("float-up")
+    loaderImage?.classList.add("float-up")
     setTimeout(() => {
-      loaderImage.classList.add("squeeze-icon")
+      loaderImage?.classList.add("squeeze-icon")
     }, 1700)
   }, [])
 

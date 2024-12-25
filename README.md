@@ -1,3 +1,8 @@
+<div align="center">
+<h1>Dstortd website</h1>
+Just a side project built with Gatsby js
+</div>
+
 ## 🚀 Quick start
 
 1.  **Start developing.**

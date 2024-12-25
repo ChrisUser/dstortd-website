@@ -1,5 +1,6 @@
-@import 'mixins'
-@import 'fonts.css'
+@use 'mixins' as *
+@use 'fonts.css' as *
+@use "sass:color"
 
 *
     outline: none
@@ -262,7 +263,7 @@ header
 .services-details-container
     position: relative
     width: 100%
-    background: linear-gradient(180deg, $main-background-color, lighten($accent-pink, 18%), $main-background-color)
+    background: linear-gradient(180deg, $main-background-color, color.adjust($accent-pink, $lightness: 18%), $main-background-color)
     padding: 64pt 0 64pt
 
     .service-panel:nth-child(odd)
@@ -289,7 +290,7 @@ header
         margin: 64pt auto
         width: 83%
         border-radius: $main-border-radius
-        background-color: lighten($main-background-color, 15%)
+        background-color: color.adjust($main-background-color, $lightness: 15%)
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
         transform: skewY(8deg)
         transition: left 0.18s cubic-bezier(0, 0, 0.76, 1.21), box-shadow 0.2s cubic-bezier(0, 0, 0.76, 1.21), top 0.3s linear, opacity 0.28s linear
@@ -379,7 +380,7 @@ header
                 z-index: 1
                 position: absolute
                 left: 0
-                background: lighten($main-background-color, 28%)
+                background: color.adjust($main-background-color, $lightness: 28%)
                 content: ''
                 height: 110%
                 width: 110%
